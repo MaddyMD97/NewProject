@@ -3,13 +3,14 @@ package org.base;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 	
-	public static WebDriver driver;
+	 static WebDriver driver;
 	
 	public static WebDriver chromeBrowser() {
 		WebDriverManager.chromiumdriver().setup();
@@ -18,7 +19,6 @@ public class BaseClass {
 		
 	}
 		
-	
 	
 	public static void urlLaunch(String url) {
 		driver.get(url); 
@@ -30,5 +30,7 @@ public class BaseClass {
 		
 	}
 	
-
+	public static void sendkeys(WebElement e,String value) {
+		e.sendKeys(value);
+	}
 }

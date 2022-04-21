@@ -6,11 +6,12 @@ import org.openqa.selenium.support.FindBy;
 
 public class ProjectSearch extends BaseClass {
 	
-	@FindBy(id="twotabsearchtextbox")
+	@FindBy(xpath="//input[@id='twotabsearchtextbox']")
 	private WebElement SearchBox;
 	
 	@FindBy(xpath="//input[@type='submit']")
 	private WebElement searchButton;
+	
 	
 	public WebElement getSearchBox() {
 		return SearchBox;
