@@ -12,17 +12,12 @@ public class ProjectSearch extends BaseClass {
 	@FindBy(xpath="//input[@type='submit']")
 	private WebElement searchButton;
 	
-	
 	public WebElement getSearchBox() {
 		return SearchBox;
 	}
-
 	public WebElement getSearchButton() {
 		return searchButton;
 	}
-
-	
-	
 	}
 
 

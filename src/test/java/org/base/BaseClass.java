@@ -16,10 +16,8 @@ public class BaseClass {
 		WebDriverManager.chromiumdriver().setup();
 		driver = new ChromeDriver();
 		return driver;
-		
 	}
 		
-	
 	public static void urlLaunch(String url) {
 		driver.get(url); 
 		driver.manage().window().maximize();

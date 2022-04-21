@@ -1,6 +1,5 @@
 package org.project.search;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -9,13 +8,10 @@ import org.base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.server.handler.GetElementText;
 
 public class RealME extends BaseClass {
 
 	public static void main(String[] args) {
-		
-		
 		WebDriver driver = chromeBrowser();
 				
 		urlLaunch("https://www.amazon.in/");
@@ -24,7 +20,7 @@ public class RealME extends BaseClass {
 		
 //		ProjectSearch ps=new ProjectSearch();
 //		sendkeys(ps.getSearchBox(), "realme xt");
-
+		
 		WebElement searchbox = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
 		searchbox.sendKeys("realme xt");
 		
@@ -56,13 +52,14 @@ public class RealME extends BaseClass {
 				FP.add(FF);
 			}
 			
-			
 		}
 		
-		System.out.println(FP);
+		System.out.println("----------------------------");
+		//System.out.println(FP);
 		
 		Collections.sort(FP);
-		System.out.println(FP);
+		
+		//System.out.println(FP);
 
 		System.out.println("Minimun Price is.... "+ FP.get(0));		
 		System.out.println("Maximum Price is.... "+ FP.get(FP.size()-1)); 
