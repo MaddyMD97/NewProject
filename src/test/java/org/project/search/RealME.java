@@ -67,6 +67,8 @@ public class RealME extends BaseClass {
 		System.out.println("Minimun Price is.... "+ FP.get(0));		
 		System.out.println("Maximum Price is.... "+ FP.get(FP.size()-1)); 
          
+		driver.quit();
+		
 	}
 	
 }
