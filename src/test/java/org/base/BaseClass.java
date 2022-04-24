@@ -30,7 +30,15 @@ public class BaseClass {
 		
 	}
 	
-	public static void sendkeys(WebElement e,String value) {
-		e.sendKeys(value);
+	public static void sendkeys(WebElement e,String TestToInput) {
+		e.sendKeys(TestToInput);
+	}
+	
+	public static void clickit(WebElement e) {
+		e.click();
+	}
+	
+	public static void getthetext(WebElement e) {
+		e.getText();
 	}
 }
